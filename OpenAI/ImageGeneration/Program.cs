@@ -16,7 +16,7 @@ namespace OpenAI_Examples
     {
         public static async Task Main()
         {
-            OpenAI_API.APIAuthentication.Default = new OpenAI_API.APIAuthentication("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");
+            OpenAI_API.APIAuthentication.Default = new OpenAI_API.APIAuthentication("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");
 
             var api = new OpenAI_API.OpenAIAPI();
 

@@ -9,10 +9,6 @@ class Program
         var segmenterData = @"stanford-segmenter-2020-11-17\data\";
         var sampleData = @".\stanford-segmenter-2020-11-17\test.simp.utf8";
 
-        // `test.simple.utf8` contains following text:
-        // 面对新世纪，世界各国人民的共同愿望是：继续发展人类以往创造的一切文明成果，克服20世纪困扰着人类的战争和贫
-        // 困问题，推进和平与发展的崇高事业，创造一个美好的世界。
-
         // This is a very simple demo of calling the Chinese Word Segmenter programmatically.
         // It assumes an input file in UTF8. This will run correctly in the distribution home
         // directory. To run in general, the properties for where to find dictionaries or

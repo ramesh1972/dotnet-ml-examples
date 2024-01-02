@@ -16,10 +16,13 @@ namespace OpenAI_Examples
     {
         public static void Main()
         {
-            OpenAI_API.APIAuthentication.Default = new OpenAI_API.APIAuthentication("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");
+            // Replace the Open AI API Key with your own
+            OpenAI_API.APIAuthentication.Default = new OpenAI_API.APIAuthentication("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");
 
+            // create the API handle
             var api = new OpenAI_API.OpenAIAPI();
 
+            // call the chat completion API with a sample prompt
             var results = api.Chat.CreateChatCompletionAsync(new ChatRequest()
             {
                 Model = Model.ChatGPTTurbo,
@@ -30,6 +33,7 @@ namespace OpenAI_Examples
                 }
             }).Result;
 
+            // dispaly the respose frmo ChatGPT
             Console.WriteLine(results);
         }
     }

@@ -11,7 +11,6 @@ namespace HNSW.Net.Demo
     using System.Linq;
     using MessagePack;
     using System.Text;
-
     using static HNSW.Net.EventSources;
     using System.Threading;
 

@@ -12,6 +12,7 @@ namespace HNSW.Net.Demo
     using System.IO;
     using System.Linq;
     using System.Threading;
+    using MessagePackObject;
 
     /// <summary>
     /// The Hierarchical Navigable Small World Graphs. https://arxiv.org/abs/1603.09320
