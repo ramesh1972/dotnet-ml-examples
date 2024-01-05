@@ -2,7 +2,7 @@
 using Newtonsoft;
 using System.Text.Json;
 
-OpenAIClient client = new OpenAIClient("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");
+OpenAIClient client = new OpenAIClient("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");
 string deploymentOrModelName = "gpt-3.5-turbo";
 
 FunctionDefinition s_futureTemperatureFunction = new()

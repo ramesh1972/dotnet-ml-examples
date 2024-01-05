@@ -12,7 +12,9 @@ namespace HNSW.Net.Demo
     using System.IO;
     using System.Linq;
     using System.Threading;
-    using MessagePackObject;
+
+    using MessagePack;
+    using MessagePack.Formatters;
 
     /// <summary>
     /// The Hierarchical Navigable Small World Graphs. https://arxiv.org/abs/1603.09320
@@ -207,6 +209,7 @@ namespace HNSW.Net.Demo
         public void ResizeDistanceCache(int newSize)
         {
             Graph.GraphCore.ResizeDistanceCache(newSize);
+        
         }
 
         [MessagePackObject(keyAsPropertyName:true)]
